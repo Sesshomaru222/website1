@@ -12,18 +12,99 @@
     border-bottom: 2px solid black;
     box-shadow: 2px 0 4px black;
     position:sticky;
+    display: flex;
+    flex-direction: row;
 }
+
+.head ul
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.head ul li
+{
+    margin: 30px;
+    list-style: none;
+}
+
+.head ul li a
+{
+    padding: 10px 20px;
+    color: white;
+    text-shadow: 0 0 3px black, 1px 1px 1px black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.head ul li a:hover
+{
+    background-color: azure;
+}
+
 
 .head-h1
 {
     /* title */
-    text-align: left;
     margin-left: 50px;
     font-size: 50px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight:lighter;
     color: yellow;
     text-shadow: 0 0 2px black, 2px 2px 4px black;
+}
+
+.popup
+{
+    text-align: center;
+    /* width: 80vh;
+    height: 90vh; */
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(55, 55, 55, 0.78);
+    position: fixed;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    border-radius: 30px;
+    box-shadow: 2px 0px 10px black;
+    transition: 5s ease;
+}
+
+.popup h2
+{
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.popup p
+{
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 5px black;
+}
+
+.popup input
+{
+    width: 13%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-width: 0;
+    border-radius: 10px;
+    color:  white;
+    font-size: 20px;
+}
+
+.hidden
+{
+    display: none;
 }
 
 .body-content
@@ -44,7 +125,6 @@
     width: 80%;
     padding: 50px;
     border-radius: 15px;
-    /* border: 2px solid black; */
     margin: 50px auto;
     box-shadow: 2px 2px 4px black;
     font-size:x-large;
