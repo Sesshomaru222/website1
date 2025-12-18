@@ -30,27 +30,41 @@
 {
     /* Body div */
     width: 100%;
-    height: 100px;
     text-align: center;
     padding: 50px 0;
 
 }
 
-#messages
+.pick
 {
-    background-color: rgba(160, 221, 160, 0.687);
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
     padding: 50px;
     border-radius: 15px;
-    border: 2px solid black;
-    margin: 50px;
-    box-shadow: 2px 2px 5px black;
+    /* border: 2px solid black; */
+    margin: 50px auto;
+    box-shadow: 2px 2px 4px black;
     font-size:x-large;
 }
 
-#Javascript
+.pick h2
 {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    margin: 30px 0;
+    background-color: rgba(128, 128, 128, 0.11);
+    border-radius: 15px;
+    text-shadow: 0 0 1.4px gold;
+    padding: 20px 0px;
+    width: 100%;
+    letter-spacing: 12px;
+    word-spacing: 10px;
+    font-family: serif;
+}
+
+.pick p
+{
+    line-height:1.8;
+    font-family: sans-serif;
 }
