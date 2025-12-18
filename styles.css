@@ -9,6 +9,9 @@
     /* title div */
     background-color: rgb(211, 211, 255);
     padding: 40px 0;
+    border-bottom: 2px solid black;
+    box-shadow: 2px 0 4px black;
+    position:sticky;
 }
 
 .head-h1
@@ -31,4 +34,23 @@
     text-align: center;
     padding: 50px 0;
 
+}
+
+#messages
+{
+    background-color: rgba(160, 221, 160, 0.687);
+    width: 500px;
+    padding: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin: 50px;
+    box-shadow: 2px 2px 5px black;
+    font-size:x-large;
+}
+
+#Javascript
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }

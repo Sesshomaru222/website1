@@ -1,26 +1,24 @@
 let curIndex = 0
+let messages = ["Github is a repository for all your commits! With it, \
+    you can store your git changes on the internet and share them with the world!",
+    "Welcome to my humble abode",
+    "Nothing is true, everything is permitted",
+    "My favorite game franchise is probably Bethesda", 
+    "Assassin's Creed is a close second"]
+    let el = document.getElementById("messages")
+
+    el.innerText = messages[curIndex]
+    curIndex++
 
 function getMessage()
 {
-    let maxIndex = 2
-    let el = document.getElementById("Javascript")
+    let el = document.getElementById("messages")
 
-    if(curIndex === 0)
-    {
-        el.innerHTML = "<p>Welcome to my humble abode</p>"
-    }
-    else if(curIndex === 1)
-    {
-        el.innerHTML = "<p>This is cray cray</p>"
-    }
-    else if (curIndex == 2)
-    {
-        el.innerHTML = "<p>Nothing is true, everything is permitted</p>"
-    }
+    el.innerText = messages[curIndex]
 
     curIndex++
 
-    if(curIndex > maxIndex)
+    if(curIndex === messages.length)
     {
         curIndex = 0
     }
@@ -29,4 +27,4 @@ function getMessage()
 
 
 
-setInterval(getMessage,5000)
+setInterval(getMessage,3000)
