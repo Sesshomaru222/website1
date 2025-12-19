@@ -13,11 +13,11 @@ function hidePopup()
 document.addEventListener('DOMContentLoaded', () => 
 {
     let els = document.getElementsByClassName("pick");
-    console.log(els);
-
+    
     let popup = document.getElementsByClassName("popup")[0]
 
     let top = document.getElementsByClassName("top")[0]
+    top.classList.add('hidden')
 
     window.addEventListener('scroll', ()=>{
         if(window.scrollY > 1800)
@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () =>
             top.classList.add('hidden')
         }
 
-        console.log(scrollY)
     })
 
     top.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));

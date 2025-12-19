@@ -7,13 +7,15 @@
 .head
 {
     /* title div */
-    background-color: rgb(211, 211, 255);
+    /* background-color: rgb(211, 211, 255); */
+    background-color: rgb(0, 0, 0);
     padding: 40px 0;
     border-bottom: 2px solid black;
     box-shadow: 2px 0 4px black;
-    position:sticky;
+    /* position:sticky; */
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .head ul
