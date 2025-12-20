@@ -11,7 +11,6 @@
     padding: 40px 0;
     border-bottom: 2px solid black;
     box-shadow: 2px 0 4px black;
-    /* position:sticky; */
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -26,7 +25,7 @@
 
 .head ul li
 {
-    margin: 30px;
+    margin: 0 30px;
     list-style: none;
 }
 
