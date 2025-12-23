@@ -4,10 +4,13 @@
     padding: 0;
 }
 
+
 .head
 {
     /* title div */
-    background-color: rgb(211, 211, 255);
+    /* background-color: rgb(211, 211, 255); */
+    /* background-image: linear-gradient(to top, black, gray, gray, black); */
+    background-image: linear-gradient(to top, rgb(25, 25, 25), gray, gray);
     padding: 40px 0;
     border-bottom: 2px solid black;
     box-shadow: 2px 0 4px black;
@@ -29,6 +32,7 @@
     margin: 0 30px;
     list-style: none;
     padding-top: 10px;
+    text-align: center;
 }
 
 .head ul li a
@@ -50,10 +54,11 @@
 {
     /* title */
     margin-left: 50px;
+    text-align: center;
     font-size: 50px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight:lighter;
-    color: yellow;
+    color: gold;
     text-shadow: 0 0 2px black, 2px 2px 4px black;
 }
 
@@ -112,12 +117,16 @@
     margin-top: 15px;
     text-align: center;
     
+    
 }
 
 .side-menu h3
 {
     font-size: 20px;
-    background-color: rgb(190, 226, 255);
+    /* background-color: rgb(190, 226, 255); */
+    background-image: linear-gradient(to top, rgb(25, 25, 25), gray);
+    text-shadow: 0 0 2px black, 2px 2px 4px black;
+    color: white;
     border-radius: 10px;
     padding: 10px 0;
 }
@@ -141,8 +150,9 @@
 .side-menu ul li a
 {
     text-decoration: none;
-    color: black;
+    color: rgb(91, 91, 91);
     text-transform: capitalize;
+    font-weight: bold;
 }
 
 .body-container
@@ -159,7 +169,7 @@
     width: 100%;
     text-align: center;
     padding: 50px 0;
-
+    color: rgb(91, 91, 91);
 }
 
 .pick
@@ -181,7 +191,7 @@
     margin: 30px 0;
     /* background-color: rgba(128, 128, 128, 0.11); */
     border-radius: 15px;
-    text-shadow: 0 0 1.4px gold;
+    text-shadow: 0px 0px 1.4px gold;
     padding: 20px 0px;
     width: 100%;
     letter-spacing: 12px;
@@ -243,15 +253,22 @@
     .head
     {
         flex-direction: column;
+        padding: 20px 0;
     }
     .head ul
     {
         font-size: 30px;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .head ul li
     {
-        margin: 15px 0;
+        margin: 0px 0;
+    }
+    .head-h1
+    {
+        /* title */
+        margin-left: 0px;
     }
 
     .pick
