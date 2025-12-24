@@ -11,7 +11,7 @@
     /* background-color: rgb(211, 211, 255); */
     /* background-image: linear-gradient(to top, black, gray, gray, black); */
     background-image: linear-gradient(to top, rgb(25, 25, 25), gray, gray);
-    padding: 40px 0;
+    padding: 20px 0;
     border-bottom: 2px solid black;
     box-shadow: 2px 0 4px black;
     display: flex;
@@ -27,9 +27,14 @@
     font-size: 40px;
 }
 
+.head ul li:first-child
+{
+    margin-left: 30px;
+}
+
 .head ul li
 {
-    margin: 0 30px;
+    /* margin: 0 30px; */
     list-style: none;
     padding-top: 10px;
     text-align: center;
@@ -37,11 +42,15 @@
 
 .head ul li a
 {
-    padding: 10px 20px;
+    
+    padding: 10px 40px;
     color: white;
     text-shadow: 0 0 3px black, 1px 1px 1px black;
     text-decoration: none;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    transition: 0.5s background-color ease;
 }
 
 .head ul li a:hover
@@ -60,6 +69,7 @@
     font-weight:lighter;
     color: gold;
     text-shadow: 0 0 2px black, 2px 2px 4px black;
+    letter-spacing: 25px;
 }
 
 .popup
@@ -153,6 +163,13 @@
     color: rgb(91, 91, 91);
     text-transform: capitalize;
     font-weight: bold;
+}
+
+.side-menu .featured li a
+{
+    color: red;
+    font-style: italic;
+    text-shadow: 0px 1px 0.5px gold;
 }
 
 .body-container
