@@ -19,6 +19,12 @@
     100% {opacity: 100%;}
 }
 
+body
+{
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
 #home-content
 {
     margin: 20px;
@@ -45,6 +51,12 @@
     align-content: center;
     text-align: center;
     
+}
+
+#home-content div:first-child
+{
+    align-content: start;
+    padding-top: 20px;
 }
 
 #home-content div img
