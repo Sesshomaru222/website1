@@ -1,32 +1,55 @@
 @keyframes border_curl {
-    0% {border-radius: 0px; opacity: 0%;}
-    50% {opacity: 100%;}
-    100% {border-radius: 100px; opacity: 100%;}
+    0% {
+        border-radius: 0px;
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        border-radius: 100px;
+        opacity: 100%;
+    }
 }
 
 @keyframes gap_increase {
-    0% {gap: 0px;}
-    100% {gap: 20px;}
+    0% {
+        gap: 0px;
+    }
+
+    100% {
+        gap: 20px;
+    }
 }
 
 @keyframes width_decrease {
-    0% {width: 33.33%;}
-    100% {width: 20%;}
+    0% {
+        width: 33.33%;
+    }
+
+    100% {
+        width: 20%;
+    }
 }
 
 @keyframes appear {
-    0% {opacity: 0%;}
-    100% {opacity: 100%;}
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
-body
-{
+body {
     background-color: rgb(44, 44, 44);
     color: white;
 }
 
-#home-content
-{
+#home-content {
     margin: 20px;
     margin-top: 0;
     padding: 10px;
@@ -38,11 +61,9 @@ body
     gap: 10px;
 }
 
-#home-content div
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#home-content div {
+    display: grid;
+    grid-template-columns: auto auto auto;
     align-content: start;
     border: 2px solid blue;
     width: 100%;
@@ -50,47 +71,40 @@ body
     height: 100%;
     align-content: center;
     text-align: center;
-    
+
 }
 
-#home-content div:first-child
-{
+#home-content div:first-child {
     align-content: start;
     padding-top: 20px;
 }
 
-#home-content div img
-{
+#home-content div img {
     opacity: 0;
     /* animation: width_decrease 3s 0s 1 forwards; */
     max-height: 300px;
-    max-width: 45%;
+    max-width: 100%;
     animation: border_curl 4s 0s 1 forwards ease-out;
 }
 
-#home-content div:nth-child(1)
-{
+#home-content div:nth-child(1) {
     grid-column: span 3;
     justify-content: center;
     animation: gap_increase 3s 0.2s 1 forwards ease-out;
-    
+
 }
 
-#home-content div:nth-child(3)
-{
+#home-content div:nth-child(3) {
     grid-column: span 2;
 }
 
-#home-content div:nth-child(7)
-{
+#home-content div:nth-child(7) {
     grid-column: span 3;
     grid-row: span 2;
 }
 
-@media only screen and (max-width: 480px)
-{
-    #home-content
-    {
+@media only screen and (max-width: 480px) {
+    #home-content {
         margin: 20px 0px;
         margin-top: 0;
         padding: 10px 0px;
@@ -101,8 +115,7 @@ body
         gap: 0px;
     }
 
-    #home-content div
-    {
+    #home-content div {
         flex-direction: row;
         flex-wrap: wrap;
         align-content: start;
@@ -112,7 +125,7 @@ body
         height: 100%;
         align-content: center;
         text-align: center;
-        
+
     }
-    
+
 }
