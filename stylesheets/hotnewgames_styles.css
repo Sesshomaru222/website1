@@ -1,0 +1,13 @@
+#hot-new-games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: 2px solid blue;
+    padding-top: 100px;
+}
+
+#hot-new-games h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
