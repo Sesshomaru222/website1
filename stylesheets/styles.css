@@ -21,7 +21,7 @@
 .head ul {
     display: flex;
     flex-direction: row;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .head ul li:first-child {
@@ -56,7 +56,7 @@
     /* title */
     margin-left: 50px;
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     color: gold;
@@ -66,8 +66,6 @@
 
 .popup {
     text-align: center;
-    /* width: 80vh;
-    height: 90vh; */
     display: flex;
     gap: 50px;
     flex-direction: column;
@@ -86,14 +84,14 @@
 .popup h2 {
     margin: 0 auto;
     padding: 10px 0;
-    font-size: 80px;
+    font-size:5rem;
     color: white;
     text-shadow: 0 0 5px black;
 }
 
 .popup p {
     color: white;
-    font-size: 50px;
+    font-size: 3.125rem;
     text-shadow: 0 0 5px black;
 }
 
@@ -104,7 +102,7 @@
     border-width: 0;
     border-radius: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .side-menu {
@@ -118,7 +116,7 @@
 }
 
 .side-menu h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     /* background-color: rgb(190, 226, 255); */
     background-image: linear-gradient(to top, rgb(25, 25, 25), gray);
     text-shadow: 0 0 2px black, 2px 2px 4px black;
@@ -138,7 +136,7 @@
 
 .side-menu ul li {
     list-style: none;
-    font-size: larger;
+    font-size: 1.25rem;
 }
 
 .side-menu ul li a {
@@ -192,7 +190,7 @@
     letter-spacing: 12px;
     word-spacing: 10px;
     font-family: serif;
-    font-size: 80px;
+    font-size: 5rem;
     /* text-transform:capitalize; */
     text-transform: uppercase;
 }
@@ -234,7 +232,7 @@
 .top p {
     align-items: center;
     border-radius: 30px;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 /* Mobile Site */
@@ -246,13 +244,18 @@
     }
 
     .head ul {
-        font-size: 30px;
+        font-size: 1.5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
     .head ul li {
-        margin: 0px 0;
+        /* margin: 0px 0px; */
+    }
+
+    .head ul li:first-child
+    {
+        margin-left: 0px;
     }
 
     .head-h1 {
