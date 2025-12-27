@@ -63,7 +63,7 @@ body {
 
 #home-content div {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     align-content: start;
     /* border: 2px solid blue; */
     width: 100%;
@@ -91,13 +91,14 @@ body {
 
 #home-content div:nth-child(1) {
     grid-column: span 3;
-    
+
 
 }
 
 #home-content div:nth-child(3) {
     grid-column: span 2;
     grid-row: span 2;
+
 }
 
 #home-content div:nth-child(5) {
@@ -107,17 +108,18 @@ body {
 
 /* Grid Designs */
 
-#home-content div:nth-child(1)
-{
+#home-content div:nth-child(1) {
     justify-content: center;
     animation: gap_increase 3s 0.2s 1 forwards ease-out;
 }
+
 #home-content div:nth-child(2) {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     font-size: 2.5em;
     margin: 10px 0px 0px 0px;
-    
+
 }
 
 #home-content div:nth-child(2) h1:first-child {
@@ -138,13 +140,12 @@ body {
     text-transform: capitalize;
 }
 
-#home-content div:nth-child(3)
-{
+#home-content div:nth-child(3) {
     display: flex;
     flex-direction: column;
     font-size: 2.0em;
     align-content: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 #home-content div:nth-child(3) p {
@@ -160,8 +161,7 @@ body {
     text-transform: capitalize;
 }
 
-#home-content div:nth-child(4)
-{
+#home-content div:nth-child(4) {
     display: flex;
     flex-direction: row;
     font-size: 2.5em;
