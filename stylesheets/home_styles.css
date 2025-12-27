@@ -172,7 +172,10 @@ body {
     gap: 150px;
     border-top: 4px solid white;
     text-transform: capitalize;
+    opacity: 0;
 }
+
+
 
 #home-content div:nth-child(4) a {
     color: rgb(255, 172, 172);
@@ -211,24 +214,29 @@ body {
         margin: 20px 0px;
         margin-top: 0;
         padding: 10px 0px;
-        display: grid;
+        display: flex;
         justify-items: center;
         align-items: center;
-        grid-template-columns: auto auto;
+        flex-direction: column;
         gap: 0px;
+        width: 100%;
     }
 
     #home-content div {
-        flex-direction: row;
         flex-wrap: wrap;
-        align-content: start;
-        /* border: 2px solid transparent; */
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        align-content: center;
-        text-align: center;
+        max-width: 90%;
+    }
+
+    #home-content div:nth-child(3) 
+    {
+    grid-column: span 1;
 
     }
+
+    #home-content div:nth-child(4) {
+        /* flex-direction: row; */
+        gap: 15px;
+    }
+
 
 }
