@@ -203,10 +203,6 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .head ul li {
-        /* margin: 0px 0px; */
-    }
-
     .head ul li:first-child {
         margin-left: 0px;
     }
