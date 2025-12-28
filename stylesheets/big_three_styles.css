@@ -35,6 +35,9 @@
     font-size: 4rem;
     margin: 30px 0px 10px 0px;
     background-color: rgba(255, 255, 0, 0.128);
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+    padding: 20px 0px;
 }
 
 #big-three-content p {
@@ -43,4 +46,30 @@
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 0 5px black; */
+}
+
+@media only screen and (max-width: 480px)
+{
+    #big-three p {
+        font-size: 1.2rem;
+        max-width: 90%;
+        text-indent: 0px;
+    }
+
+    #big-three h2 {
+        font-size: 3rem;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+    }
+
+    #big-three-content h3 {
+        font-size: 2.5rem;
+        padding: 5rem 0;
+    }
+
+    #big-three-content img {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+    }
 }
