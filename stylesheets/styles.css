@@ -214,6 +214,16 @@
         margin-left: 0px;
     }
 
+    .head ul li a {
+
+        padding: 4px 10px;
+    }
+
+    .head ul li
+    {
+        margin: 4px 0;
+    }
+
     .pick {
         width: 80%;
         padding: 25px;
@@ -241,9 +251,9 @@
         margin: 50px 0;
     }
 
-    .side-menu {
-        /* display: none; */
-    }
+    /* .side-menu {
+        display: none;
+    } */
 
     .body-container {
         display: flex;
